@@ -1,0 +1,28 @@
+class Animal {
+
+    void sound() {
+
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+
+        super.sound();
+
+        System.out.println("Dog barks");
+    }
+}
+
+public class SuperOverriding {
+
+    public static void main(String[] args) {
+
+        Dog dog = new Dog();
+
+        dog.sound();
+    }
+}
